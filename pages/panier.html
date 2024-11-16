@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../src/css/style.css" />
+		<link rel="stylesheet" href="../src/css/style_panier.css" />
+		<title>Neura - Panier</title>
+	</head>
+	<body>
+		<header>
+			<!-- Barre de navigation simplifiée -->
+			<div id="bar_one">
+				<a href="../index.html" class="logo">Neura</a>
+				<div class="icon">
+					<a href="stop.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+					<a href="panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
+					<a href="stop.html"><i class="fa-solid fa-user"></i></a>
+				</div>
+			</div>
+			<nav id="two">
+				<a href="../index.html">Accueil</a>
+				<a href="produits.html">Produits</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
+		<main>
+			<table class="cart-table">
+				<caption>
+					Votre Panier
+				</caption>
+				<thead>
+					<tr>
+						<th>Produit</th>
+						<th>Nom</th>
+						<th>Quantité</th>
+						<th>Prix</th>
+						<th>Effacer</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img src="../src/media/img/steamdeck.png" alt="Steamdeck" width="80" /></td>
+						<td>Steamdeck</td>
+						<td>1</td>
+						<td>200 €</td>
+						<td class="delete"><i class="fa-solid fa-trash-can"></i></td>
+					</tr>
+					<tr>
+						<td><img src="../src/media/img/casque.webp" alt="Casque" width="80" /></td>
+						<td>Casque</td>
+						<td>1</td>
+						<td>120 €</td>
+						<td class="delete"><i class="fa-solid fa-trash-can"></i></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<section class="cart-summary">
+				<h3>Résumé du panier</h3>
+				<input type="text" id="coupon" placeholder="Code promo" />
+				<button onclick="alert('OH, le RAT 🐀')">Appliquer</button>
+				<ul class="summary-details">
+					<li>Sous-total <span>320 €</span></li>
+					<li>Coupon <span>- 40 €</span></li>
+					<li>Livraison <span>+ 50 €</span></li>
+					<li class="total"><strong>Total</strong> <span>330 €</span></li>
+				</ul>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-section">
+				<div class="footer-logo">
+					<a href="../index.html" class="logo">
+						<h1>Neura</h1>
+					</a>
+					<p>Copyright © 2024 Neura<br />All Rights Reserved</p>
+				</div>
+				<div class="footer-links">
+					<div class="footer-column">
+						<h3>Navigation</h3>
+						<ul>
+							<li><a href="../index.html">Accueil</a></li>
+							<li><a href="produits.html">Produits</a></li>
+							<li><a href="panier.html">Panier</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h3>Support</h3>
+						<ul>
+							<li><a href="contact.html">Aide</a></li>
+							<li><a href="contact.html">Centre d'assistance</a></li>
+							<li><a href="contact.html">Signaler un problème</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h3>Suivez-nous</h3>
+						<ul class="social-links">
+							<li>
+								<a href="#"><i class="fa-brands fa-facebook"></i> Neura</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-x-twitter"></i> Neura</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-instagram"></i> Neura</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/f0f395534e.js" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding: 40px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	max-width: 800px;
+	margin: 50px auto;
+}
+
+.cart-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+caption {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+thead th {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+tbody td {
+	padding: 15px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.delete i {
+	color: #ff4d4f;
+	cursor: pointer;
+}
+
+.delete i:hover {
+	color: #ff7875;
+}
+
+.cart-summary {
+	width: 100%;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-summary h3 {
+	font-size: 1.6em;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#coupon {
+	width: calc(100% - 20px);
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 1em;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+.summary-details {
+	list-style: none;
+	padding: 0;
+}
+
+.summary-details li {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	font-size: 1.1em;
+	border-bottom: 1px solid #eee;
+}
+
+.summary-details .total {
+	font-size: 1.4em;
+	font-weight: bold;
+}
